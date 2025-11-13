@@ -11,4 +11,6 @@ jobs:
         uses: actions/checkout@v5
 
       - name: script
-        run: ./dragoncow.sh
+        run: |
+            chmod u+x dragoncow.sh
+            ./dragoncow.sh
