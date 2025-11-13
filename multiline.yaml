@@ -1,0 +1,19 @@
+name: Multi Lines
+
+on: push
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Hello World
+      run: echo "Hello World!"
+
+    - name: check files
+      run: |
+        touch test
+        echo "shiiiiit" > test
+        ls -ltrh
+        cat test
