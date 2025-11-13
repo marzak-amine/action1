@@ -10,14 +10,5 @@ jobs:
       - name: checkout actions repo
         uses: actions/checkout@v5
 
-      - name: Install cowsay
-        run: sudo apt-get install cowsay
-
-      - name: generate Dragon cowsay
-        run: cowsay -f dragon  "Moooooooooo Dragon  mok" > dragoncow.txt
-
-      - name: show ascii art
-        run: cat dragoncow.txt
-
-      - name: list???
-        run: ls -ltrha
+      - name: script
+        run: ./dragoncow.sh
